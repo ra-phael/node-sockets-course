@@ -10,7 +10,6 @@ function scrollToBottom () {
     const scrollHeight = messages.prop('scrollHeight');
     const newMessageHeight = newMessage.innerHeight();
     const lastMessageHeight = newMessage.prev().innerHeight();
-    console.log('inside scroll');
     if (clientHeight + scrollTop + newMessageHeight + lastMessageHeight >= scrollHeight) {
         messages.scrollTop(scrollHeight);
     }
